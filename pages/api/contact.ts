@@ -1,6 +1,6 @@
 export default function handler(req, res) {
   if (req.method === 'POST') {
-
-    res.json({data: {me: true}})
+    console.log(req.body);
+    res.json({message: 'ok'})
   }
 }
